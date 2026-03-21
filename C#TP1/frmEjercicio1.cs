@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace C_TP1
 {
-    public partial class Form1 : Form
+    public partial class frmEjercicio1 : Form
     {
-        public Form1()
+        public frmEjercicio1()
         {
             InitializeComponent();
         }
-
     }
 }
