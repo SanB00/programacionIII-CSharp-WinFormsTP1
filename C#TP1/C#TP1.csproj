@@ -58,6 +58,18 @@
     <Compile Include="frmEjercicio1.Designer.cs">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEjercicio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEjercicio2.Designer.cs">
+      <DependentUpon>FrmEjercicio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEjercicio3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEjercicio3.Designer.cs">
+      <DependentUpon>FrmEjercicio3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEjercicio1.resx">
       <DependentUpon>frmEjercicio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEjercicio2.resx">
+      <DependentUpon>FrmEjercicio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEjercicio3.resx">
+      <DependentUpon>FrmEjercicio3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
