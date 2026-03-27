@@ -30,13 +30,14 @@
         {
             this.btnEjercicio1 = new System.Windows.Forms.Button();
             this.btnEjercicio2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEjercicio3 = new System.Windows.Forms.Button();
             this.lblIntegrantes = new System.Windows.Forms.Label();
             this.lblIntegrante1 = new System.Windows.Forms.Label();
             this.lblIntegrante2 = new System.Windows.Forms.Label();
             this.lblIntegrante3 = new System.Windows.Forms.Label();
             this.labelIntegrante4 = new System.Windows.Forms.Label();
             this.Integrante5 = new System.Windows.Forms.Label();
+            this.lblIntegrante6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEjercicio1
@@ -61,15 +62,16 @@
             this.btnEjercicio2.UseVisualStyleBackColor = true;
             this.btnEjercicio2.Click += new System.EventHandler(this.btnEjercicio2_Click);
             // 
-            // button1
+            // btnEjercicio3
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(544, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "EJERCICIO 3";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEjercicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjercicio3.Location = new System.Drawing.Point(544, 39);
+            this.btnEjercicio3.Name = "btnEjercicio3";
+            this.btnEjercicio3.Size = new System.Drawing.Size(220, 60);
+            this.btnEjercicio3.TabIndex = 2;
+            this.btnEjercicio3.Text = "EJERCICIO 3";
+            this.btnEjercicio3.UseVisualStyleBackColor = true;
+            this.btnEjercicio3.Click += new System.EventHandler(this.btnEjercicio3_Click);
             // 
             // lblIntegrantes
             // 
@@ -81,7 +83,6 @@
             this.lblIntegrantes.Size = new System.Drawing.Size(126, 26);
             this.lblIntegrantes.TabIndex = 3;
             this.lblIntegrantes.Text = "Integrantes:";
-            this.lblIntegrantes.Click += new System.EventHandler(this.lblIntegrantes_Click);
             // 
             // lblIntegrante1
             // 
@@ -92,7 +93,6 @@
             this.lblIntegrante1.Size = new System.Drawing.Size(201, 26);
             this.lblIntegrante1.TabIndex = 4;
             this.lblIntegrante1.Text = "Guillermo Maydana";
-            this.lblIntegrante1.Click += new System.EventHandler(this.lblIntegrante1_Click);
             // 
             // lblIntegrante2
             // 
@@ -123,7 +123,6 @@
             this.labelIntegrante4.Size = new System.Drawing.Size(179, 26);
             this.labelIntegrante4.TabIndex = 8;
             this.labelIntegrante4.Text = "Lautaro Gimenez";
-            this.labelIntegrante4.Click += new System.EventHandler(this.labelIntegrante4_Click);
             // 
             // Integrante5
             // 
@@ -135,6 +134,16 @@
             this.Integrante5.TabIndex = 9;
             this.Integrante5.Text = "Franco Casamento";
             // 
+            // lblIntegrante6
+            // 
+            this.lblIntegrante6.AutoSize = true;
+            this.lblIntegrante6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntegrante6.Location = new System.Drawing.Point(196, 290);
+            this.lblIntegrante6.Name = "lblIntegrante6";
+            this.lblIntegrante6.Size = new System.Drawing.Size(173, 26);
+            this.lblIntegrante6.TabIndex = 10;
+            this.lblIntegrante6.Text = "Santiago Burgos";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,13 +151,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblIntegrante6);
             this.Controls.Add(this.Integrante5);
             this.Controls.Add(this.labelIntegrante4);
             this.Controls.Add(this.lblIntegrante3);
             this.Controls.Add(this.lblIntegrante2);
             this.Controls.Add(this.lblIntegrante1);
             this.Controls.Add(this.lblIntegrantes);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEjercicio3);
             this.Controls.Add(this.btnEjercicio2);
             this.Controls.Add(this.btnEjercicio1);
             this.Name = "Form1";
@@ -163,13 +173,14 @@
 
         private System.Windows.Forms.Button btnEjercicio1;
         private System.Windows.Forms.Button btnEjercicio2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEjercicio3;
         private System.Windows.Forms.Label lblIntegrantes;
         private System.Windows.Forms.Label lblIntegrante1;
         private System.Windows.Forms.Label lblIntegrante2;
         private System.Windows.Forms.Label lblIntegrante3;
         private System.Windows.Forms.Label labelIntegrante4;
         private System.Windows.Forms.Label Integrante5;
+        private System.Windows.Forms.Label lblIntegrante6;
     }
 }
 

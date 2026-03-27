@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace C_TP1
 {
-    public partial class frmEjercicio1 : Form
+    public partial class FrmEjercicio1 : Form
     {
         Form1 form1;
-        public frmEjercicio1()
+        public FrmEjercicio1()
         {
             InitializeComponent();
         }
-        public frmEjercicio1(Form1 form1)
+        public FrmEjercicio1(Form1 form1)
         {
             InitializeComponent();
             this.form1 = form1;
@@ -29,36 +29,43 @@ namespace C_TP1
 
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             bool existe = false;
-
-            if (tbNombres.Text.Trim().Length > 0)
-            {
-                foreach (string item in lbNombres.Items)
-                {
-                    if (tbNombres.Text.Trim().ToUpper() == item)
-                    {
-                        existe = true;
-                        break;
-                    }
-                }
-
-                if (existe)
-                {
-                    MessageBox.Show("Ese nombre ya fue ingresado.");
-                    tbNombres.Text = string.Empty;
-                }
-                else
-                {
-                    lbNombres.Items.Add(tbNombres.Text.Trim().ToUpper());
-                    tbNombres.Text = string.Empty;
-                }
-            }
-            else
+            String strTxtNombre = tbNombres.Text.Trim();
+            if (strTxtNombre.Length <= 0)
             {
                 MessageBox.Show("Debe ingresar un Nombre");
+                tbNombres.Text = string.Empty;
+                return;
             }
+
+            if (elNombreEstaEnLaLista(strTxtNombre, lbNombres))
+            {
+                MessageBox.Show("Ese nombre ya fue ingresado en la lista 1.");
+                tbNombres.Text = string.Empty;
+                return;
+            }
+            if (elNombreEstaEnLaLista(strTxtNombre, lbNombres2))
+            {
+                MessageBox.Show("Ese nombre ya fue ingresado en la lista 2.");
+                tbNombres.Text = string.Empty;
+                return;
+            }
+            lbNombres.Items.Add(tbNombres.Text.Trim().ToUpper());
+        }
+
+        private bool elNombreEstaEnLaLista(String nombreAValidar, ListBox lstNombres)
+        {
+            foreach (string item in lstNombres.Items)
+            {
+                if (nombreAValidar.Trim().ToUpper() == item)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,21 +84,13 @@ namespace C_TP1
                 lbNombres.Items.Remove(item);
             }
         }
-
-        private void lbNombres2_SelectedIndexChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lbNombres_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void frmEjercicio1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            form1.Show();
+            foreach (var item in lbNombres.Items)
+            {
+                lbNombres2.Items.Add(item);
+            }
+            lbNombres.Items.Clear();
         }
 
     }

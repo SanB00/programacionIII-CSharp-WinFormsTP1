@@ -1,6 +1,6 @@
 ﻿namespace C_TP1
 {
-    partial class frmEjercicio1
+    partial class FrmEjercicio1
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = ">>";
             this.button3.UseVisualStyleBackColor = true;
-            //this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ejercicio1
             // 
@@ -116,7 +116,6 @@
             this.Name = "ejercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmEjercicio1_FormClosed);
             this.Load += new System.EventHandler(this.frmEjercicio1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
