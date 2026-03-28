@@ -117,4 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblResultado.Text" xml:space="preserve">
+    <value>Sexo Femenino Masculino
+Estado Civil Casado Soltero
+
+Data Entry 
+Operador de PC
+Programador
+Reparador de PC 
+Tester
+
+Usted seleccionó los siguientes elementos:
+Sexo: Femenino
+Estado Civil: Casado
+Oficio:
+- Data Entry
+- Operador de PC</value>
+  </data>
 </root>
