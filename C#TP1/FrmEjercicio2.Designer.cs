@@ -135,7 +135,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmEjercicio2";
-            this.Text = "Nombre y Apellido";
+            this.Text = "Ejercicio 2: Nombre y Apellido";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
