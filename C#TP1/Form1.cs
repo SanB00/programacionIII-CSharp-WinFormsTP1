@@ -17,30 +17,30 @@ namespace C_TP1
             InitializeComponent();
         }
 
-        private void btnEJERCICIO1_Click(object sender, EventArgs e)
+        private void btnEjercicio1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            using(frmEjercicio1 frmEjercicio1 = new frmEjercicio1())
+            using (FrmEjercicio1 frmEjercicio1 = new FrmEjercicio1())
             {
                 frmEjercicio1.ShowDialog();
             }
             this.Show();
         }
 
-        private void btnEJERCICIO2_Click(object sender, EventArgs e)
+        private void btnEjercicio2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            using(FrmEjercicio2 frmEjercicio2 = new FrmEjercicio2())
+            using (FrmEjercicio2 frmEjercicio2 = new FrmEjercicio2())
             {
                 frmEjercicio2.ShowDialog();
             }
             this.Show();
         }
 
-        private void btnEJERCICIO3_Click(object sender, EventArgs e)
+        private void btnEjercicio3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            using(FrmEjercicio3 frmEjercicio3 = new FrmEjercicio3())
+            using (FrmEjercicio3 frmEjercicio3 = new FrmEjercicio3())
             {
                 frmEjercicio3.ShowDialog();
             }

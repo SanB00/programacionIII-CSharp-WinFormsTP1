@@ -18,11 +18,6 @@ namespace C_TP1
             InitializeComponent();
         }
 
-        private void FrmEjercicio2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
