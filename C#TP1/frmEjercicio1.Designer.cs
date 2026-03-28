@@ -116,7 +116,6 @@
             this.Name = "ejercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1";
-            this.Load += new System.EventHandler(this.frmEjercicio1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

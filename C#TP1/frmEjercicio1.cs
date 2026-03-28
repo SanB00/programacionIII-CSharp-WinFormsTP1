@@ -13,23 +13,10 @@ namespace C_TP1
 {
     public partial class FrmEjercicio1 : Form
     {
-        Form1 form1;
         public FrmEjercicio1()
         {
             InitializeComponent();
         }
-        public FrmEjercicio1(Form1 form1)
-        {
-            InitializeComponent();
-            this.form1 = form1;
-        }
-
-        private void frmEjercicio1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             bool existe = false;

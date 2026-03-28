@@ -80,9 +80,9 @@
             this.lblIntegrantes.ForeColor = System.Drawing.Color.Red;
             this.lblIntegrantes.Location = new System.Drawing.Point(58, 131);
             this.lblIntegrantes.Name = "lblIntegrantes";
-            this.lblIntegrantes.Size = new System.Drawing.Size(126, 26);
+            this.lblIntegrantes.Size = new System.Drawing.Size(216, 26);
             this.lblIntegrantes.TabIndex = 3;
-            this.lblIntegrantes.Text = "Integrantes:";
+            this.lblIntegrantes.Text = "Integrantes Grupo18:";
             // 
             // lblIntegrante1
             // 

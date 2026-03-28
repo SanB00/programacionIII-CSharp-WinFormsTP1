@@ -19,10 +19,6 @@ namespace C_TP1
 
         private void btnEjercicio1_Click(object sender, EventArgs e)
         {
-            /*ejercicio1 ejercicio1 = new ejercicio1(this);
-            ejercicio1.Show();
-            this.Hide();
-            */
             this.Hide();
             using (FrmEjercicio1 frmEjercicio1 = new FrmEjercicio1())
             {
