@@ -69,6 +69,7 @@
             this.lbNombres.FormattingEnabled = true;
             this.lbNombres.Location = new System.Drawing.Point(41, 119);
             this.lbNombres.Name = "lbNombres";
+            this.lbNombres.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbNombres.Size = new System.Drawing.Size(294, 303);
             this.lbNombres.TabIndex = 3;
             // 
@@ -100,7 +101,7 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // ejercicio1
+            // FrmEjercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,7 +114,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbNombres);
             this.Controls.Add(this.label1);
-            this.Name = "ejercicio1";
+            this.Name = "FrmEjercicio1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1";
             this.ResumeLayout(false);
