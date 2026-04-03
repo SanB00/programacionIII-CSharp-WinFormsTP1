@@ -52,7 +52,6 @@
             this.grpSexo.TabIndex = 1;
             this.grpSexo.TabStop = false;
             this.grpSexo.Text = "Sexo";
-            this.grpSexo.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // rbMasculino
             // 
@@ -75,7 +74,6 @@
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
             this.rbFemenino.UseVisualStyleBackColor = true;
-            this.rbFemenino.CheckedChanged += new System.EventHandler(this.radioButtonFem_CheckedChanged);
             // 
             // gbEstadoCivil
             // 
@@ -88,7 +86,6 @@
             this.gbEstadoCivil.TabIndex = 2;
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
-            this.gbEstadoCivil.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
             // rbCasado
             // 
@@ -123,7 +120,6 @@
             this.lblResultado.Text = "\r\nData Entry \r\nOperador de PC\r\nProgramador\r\nReparador de PC \r\nTester\r\n\r\nUsted sel" +
     "eccionó los siguientes elementos:\r\nSexo: Femenino\r\nEstado Civil: Casado\r\nOficio:" +
     "\r\n- Data Entry\r\n- Operador de PC";
-            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // FemEjercicio3
             // 

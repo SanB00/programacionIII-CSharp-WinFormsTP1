@@ -16,25 +16,5 @@ namespace C_TP1
         {
             InitializeComponent();
         }
-
-        private void lblResultado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

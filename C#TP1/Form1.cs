@@ -46,10 +46,5 @@ namespace C_TP1
             }
             this.Show();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-             
-        }
     }
 }
