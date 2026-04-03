@@ -19,8 +19,10 @@ namespace C_TP1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            bool existe = false;
+            //bool existe = false;
+
             String strTxtNombre = tbNombres.Text.Trim();
+
             if (strTxtNombre.Length <= 0)
             {
                 MessageBox.Show("Debe ingresar un Nombre");
@@ -34,20 +36,23 @@ namespace C_TP1
                 tbNombres.Text = string.Empty;
                 return;
             }
+
             if (elNombreEstaEnLaLista(strTxtNombre, lbNombres2))
             {
                 MessageBox.Show("Ese nombre ya fue ingresado en la lista 2.");
                 tbNombres.Text = string.Empty;
                 return;
             }
-            lbNombres.Items.Add(tbNombres.Text.Trim().ToUpper());
+
+            lbNombres.Items.Add(tbNombres.Text.Trim());
+            tbNombres.Text = string.Empty;
         }
 
         private bool elNombreEstaEnLaLista(String nombreAValidar, ListBox lstNombres)
         {
             foreach (string item in lstNombres.Items)
             {
-                if (nombreAValidar.Trim().ToUpper() == item)
+                if (nombreAValidar.Trim().ToUpper() == item.ToUpper())
                 {
                     return true;
                 }
@@ -79,7 +84,5 @@ namespace C_TP1
             }
             lbNombres.Items.Clear();
         }
-
     }
 }
-

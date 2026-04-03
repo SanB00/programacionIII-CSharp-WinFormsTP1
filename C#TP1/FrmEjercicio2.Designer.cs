@@ -115,6 +115,7 @@
             this.lstNombres.FormattingEnabled = true;
             this.lstNombres.Location = new System.Drawing.Point(17, 31);
             this.lstNombres.Name = "lstNombres";
+            this.lstNombres.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lstNombres.Size = new System.Drawing.Size(259, 238);
             this.lstNombres.TabIndex = 6;
             // 
@@ -126,6 +127,7 @@
             this.btnBorrar.TabIndex = 5;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // FrmEjercicio2
             // 
