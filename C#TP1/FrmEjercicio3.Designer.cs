@@ -1,6 +1,6 @@
 ﻿namespace C_TP1
 {
-    partial class FemEjercicio3
+    partial class FrmEjercicio3
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +32,10 @@
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.grpSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -87,17 +88,6 @@
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
             // 
-            // rbCasado
-            // 
-            this.rbCasado.AutoSize = true;
-            this.rbCasado.Location = new System.Drawing.Point(28, 19);
-            this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(80, 21);
-            this.rbCasado.TabIndex = 0;
-            this.rbCasado.TabStop = true;
-            this.rbCasado.Text = "Casado";
-            this.rbCasado.UseVisualStyleBackColor = true;
-            // 
             // rbSoltero
             // 
             this.rbSoltero.AutoSize = true;
@@ -109,11 +99,22 @@
             this.rbSoltero.Text = "Soltero";
             this.rbSoltero.UseVisualStyleBackColor = true;
             // 
+            // rbCasado
+            // 
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Location = new System.Drawing.Point(28, 19);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(80, 21);
+            this.rbCasado.TabIndex = 0;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
+            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(163, 101);
+            this.lblResultado.Location = new System.Drawing.Point(163, 294);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(427, 325);
             this.lblResultado.TabIndex = 0;
@@ -121,11 +122,26 @@
     "eccionó los siguientes elementos:\r\nSexo: Femenino\r\nEstado Civil: Casado\r\nOficio:" +
     "\r\n- Data Entry\r\n- Operador de PC";
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Data Entry",
+            "Operador de PC",
+            "Programador",
+            "Reparador de PC",
+            "Tester"});
+            this.checkedListBox1.Location = new System.Drawing.Point(267, 130);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(190, 94);
+            this.checkedListBox1.TabIndex = 3;
+            // 
             // FemEjercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.gbEstadoCivil);
             this.Controls.Add(this.grpSexo);
             this.Controls.Add(this.lblResultado);
@@ -148,5 +164,6 @@
         private System.Windows.Forms.RadioButton rbSoltero;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

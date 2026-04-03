@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace C_TP1
 {
-    public partial class FemEjercicio3 : Form
+    public partial class FrmEjercicio3 : Form
     {
-        public FemEjercicio3()
+        public FrmEjercicio3()
         {
             InitializeComponent();
         }
