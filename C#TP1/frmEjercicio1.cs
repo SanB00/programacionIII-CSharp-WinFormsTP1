@@ -19,7 +19,7 @@ namespace C_TP1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            bool existe = false;
+            //bool existe = false;
 
             String strTxtNombre = tbNombres.Text.Trim();
 

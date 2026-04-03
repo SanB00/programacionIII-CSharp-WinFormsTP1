@@ -40,7 +40,7 @@ namespace C_TP1
         private void btnEjercicio3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            using (FrmEjercicio3 frmEjercicio3 = new FrmEjercicio3())
+            using (FemEjercicio3 frmEjercicio3 = new FemEjercicio3())
             {
                 frmEjercicio3.ShowDialog();
             }
